@@ -12,7 +12,6 @@ class Menu(BaseModel):
 class Submenu(BaseModel):
     title: str
     description: str
-    menu_id: int
 
     class Config:
         from_attributes = True
@@ -20,8 +19,18 @@ class Submenu(BaseModel):
 class Dish(BaseModel):
     title: str
     description: str
-    price: int
-    submenu_id: int
+    price: str
 
     class Config:
         from_attributes = True
+
+class PrintMenu(BaseModel):
+    title: str
+    description: str
+    count_submenu: int
+    count_dish: int
+
+class PrintSubmenu(BaseModel):
+    title: str
+    description: str
+    count_dish: int
