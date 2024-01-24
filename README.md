@@ -41,8 +41,6 @@
 
 </details>
 
-<details><summary><h1>Запуск производиться локально на машине</h1></summary>
-
 </details>
 
 # ТЗ проекта
